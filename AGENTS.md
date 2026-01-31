@@ -96,6 +96,21 @@ oh-my-claudecode enhances Claude Code with:
 | Agent prompt | Tiered variants (`-low`, `-medium`, `-high`) |
 | Tool definition | `src/tools/index.ts`, `src/mcp/omc-tools-server.ts` |
 
+#### Documentation Updates (docs/)
+
+| If you change... | Update this docs/ file |
+|------------------|----------------------|
+| Agent count or agent list | `docs/REFERENCE.md` (Agents section) |
+| Skill count or skill list | `docs/REFERENCE.md` (Skills section) |
+| Hook count or hook list | `docs/REFERENCE.md` (Hooks System section) |
+| Magic keywords | `docs/REFERENCE.md` (Magic Keywords section) |
+| Architecture or skill composition | `docs/ARCHITECTURE.md` |
+| Internal API or feature | `docs/FEATURES.md` |
+| Breaking changes | `docs/MIGRATION.md` |
+| Tiered agent design | `docs/TIERED_AGENTS_V2.md` |
+| Compatibility requirements | `docs/COMPATIBILITY.md` |
+| CLAUDE.md content | `docs/CLAUDE.md` (end-user instructions) |
+
 #### Skills ↔ Commands Relationship
 
 - `skills/` contains skill implementations with full prompts

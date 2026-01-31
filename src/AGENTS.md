@@ -93,16 +93,24 @@ This directory contains all TypeScript source code organized into modules:
 2. Export from `agents/index.ts`
 3. Add to `getAgentDefinitions()` in `agents/definitions.ts`
 4. Create prompt template in `/agents/new-agent.md`
+5. Update `docs/REFERENCE.md` (Agents section) with new agent
 
 **Adding a new hook:**
 1. Create directory in `hooks/` (e.g., `new-hook/`)
 2. Add `index.ts`, `types.ts`, `constants.ts`
 3. Export from `hooks/index.ts`
+4. Update `docs/REFERENCE.md` (Hooks System section) with new hook
 
 **Adding a new tool:**
 1. Create tool definition with Zod schema
 2. Add to appropriate tools file (`lsp-tools.ts`, `ast-tools.ts`)
 3. Export from `tools/index.ts`
+4. Update `docs/REFERENCE.md` if user-facing tool
+
+**Adding a new feature:**
+1. Create feature directory in `features/`
+2. Export from `features/index.ts`
+3. Update `docs/FEATURES.md` with API documentation
 
 **TypeScript conventions:**
 - Use strict mode (`noImplicitAny`, `strictNullChecks`)

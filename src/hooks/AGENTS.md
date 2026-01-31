@@ -103,6 +103,8 @@ hook-name/
 └── *.ts         # Supporting modules
 ```
 
+**When adding a new hook:** Update `docs/REFERENCE.md` (Hooks System section) with the new hook entry.
+
 #### Hook Implementation
 
 ```typescript

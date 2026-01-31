@@ -81,14 +81,7 @@ This directory contains all TypeScript source code organized into modules:
 
 ### Testing Requirements
 
-```bash
-# From project root
-npm test                    # Run all tests
-npm run test:run            # Run once without watch
-npm run test:coverage       # With coverage report
-```
-
-Test files are in `__tests__/` with pattern `*.test.ts`.
+Test files are in `__tests__/` with pattern `*.test.ts`. See root AGENTS.md for npm commands.
 
 ### Common Patterns
 
@@ -116,13 +109,8 @@ Test files are in `__tests__/` with pattern `*.test.ts`.
 - Loads skills from `/skills/*.md`
 
 ### External
-| Package | Used In | Purpose |
-|---------|---------|---------|
-| `zod` | tools, features | Runtime type validation |
-| `@ast-grep/napi` | tools/ast-tools.ts | AST parsing and searching |
-| `vscode-languageserver-protocol` | tools/lsp/ | LSP types |
-| `better-sqlite3` | hooks/swarm/ | Task coordination DB |
-| `chalk` | cli/, hud/ | Terminal colors |
+
+Key packages by module: `zod` (tools, features), `@ast-grep/napi` (tools/ast), `vscode-languageserver-protocol` (tools/lsp), `better-sqlite3` (hooks/swarm), `chalk` (cli, hud). See root AGENTS.md for full dependency list.
 
 ## Module Dependency Graph
 

@@ -111,7 +111,7 @@ function loadAgentPrompt(agentName: string): string {
 
 ### Testing Requirements
 
-Agent prompts are tested via integration tests that spawn agents and verify behavior.
+Agent prompts are verified via integration tests. See root AGENTS.md for npm commands.
 
 ## Dependencies
 

@@ -151,7 +151,7 @@ Any configurable options.
 
 ### Testing Requirements
 
-Skills are tested via integration tests that invoke skills and verify behavior.
+Skills are verified via integration tests. See root AGENTS.md for npm commands.
 
 ## Dependencies
 

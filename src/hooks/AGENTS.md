@@ -179,13 +179,7 @@ writeState('autopilot-state', state);
 
 ### Testing Requirements
 
-```bash
-# Test specific hook
-npm test -- --grep "autopilot"
-
-# Test all hooks
-npm test -- --grep "hooks"
-```
+Test specific hooks with `npm test -- --grep "hook-name"`. See root AGENTS.md for other commands.
 
 ## Dependencies
 

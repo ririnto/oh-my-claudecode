@@ -227,6 +227,9 @@ Always use `oh-my-claudecode:` prefix when calling via Task tool.
 | `git-master` | Git expert for atomic commits and history | (silent activation) |
 | `tdd` | TDD enforcement: test-first development | `/oh-my-claudecode:tdd` |
 | `learner` | Extract reusable skill from session | `/oh-my-claudecode:learner` |
+| `build-fix` | Fix build and TypeScript errors | `/oh-my-claudecode:build-fix` |
+| `code-review` | Comprehensive code review | `/oh-my-claudecode:code-review` |
+| `security-review` | Security vulnerability detection | `/oh-my-claudecode:security-review` |
 
 ### Utility Skills
 

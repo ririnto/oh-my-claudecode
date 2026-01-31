@@ -84,13 +84,13 @@ How results should be formatted.
 
 #### Tiered Variants
 
-For model routing, create variants with complexity-appropriate instructions:
+For model routing, create variants with complexity-appropriate instructions (see `templates/rules/performance.md`):
 
 | Tier | File Suffix | Instructions Focus |
 |------|-------------|-------------------|
-| LOW (Haiku) | `-low.md` | Quick, simple tasks, minimal reasoning |
-| MEDIUM (Sonnet) | Base file or `-medium.md` | Standard complexity |
-| HIGH (Opus) | `-high.md` | Complex reasoning, deep analysis |
+| LOW (Haiku) | `-low.md` | Quick, simple tasks, minimal reasoning (3x cost savings) |
+| MEDIUM (Sonnet) | Base file or `-medium.md` | Standard complexity (best coding model) |
+| HIGH (Opus) | `-high.md` | Complex reasoning, deep analysis (deepest reasoning) |
 
 ### Common Patterns
 
@@ -111,7 +111,10 @@ function loadAgentPrompt(agentName: string): string {
 
 ### Testing Requirements
 
-Agent prompts are verified via integration tests. See root AGENTS.md for npm commands.
+- Agent prompts are verified via integration tests that spawn agents
+- Test with `npm test -- --grep "agent-name"` for specific agents
+- Verify frontmatter parsing with `npm run sync-metadata`
+- Manual testing: invoke agent via Task tool and verify behavior
 
 ## Dependencies
 

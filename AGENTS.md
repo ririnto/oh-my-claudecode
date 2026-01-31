@@ -39,8 +39,8 @@ oh-my-claudecode enhances Claude Code with:
 | `skills/` | 37 skill definitions for workflows | `skills/AGENTS.md` |
 | `commands/` | 31 slash command definitions (mirrors skills) | - |
 | `scripts/` | Build scripts, utilities, and automation | - |
-| `docs/` | User documentation and guides | - |
-| `templates/` | Hook and rule templates | - |
+| `docs/` | User documentation and guides | `docs/AGENTS.md` |
+| `templates/` | Hook and rule templates (coding-style, testing, security, performance, git-workflow) | - |
 | `benchmark/` | Performance testing framework | - |
 | `bridge/` | Pre-bundled MCP server for plugin distribution | - |
 

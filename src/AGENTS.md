@@ -81,7 +81,10 @@ This directory contains all TypeScript source code organized into modules:
 
 ### Testing Requirements
 
-Test files are in `__tests__/` with pattern `*.test.ts`. See root AGENTS.md for npm commands.
+- Test files are in `__tests__/` with pattern `*.test.ts`
+- Run `npm test -- --grep "module-name"` for specific modules
+- Verify type safety with `npm run build` after changes
+- Use `lsp_diagnostics_directory` tool for project-wide type checking
 
 ### Common Patterns
 
@@ -100,6 +103,13 @@ Test files are in `__tests__/` with pattern `*.test.ts`. See root AGENTS.md for 
 1. Create tool definition with Zod schema
 2. Add to appropriate tools file (`lsp-tools.ts`, `ast-tools.ts`)
 3. Export from `tools/index.ts`
+
+**TypeScript conventions:**
+- Use strict mode (`noImplicitAny`, `strictNullChecks`)
+- Prefer interfaces over type aliases for public APIs
+- Use barrel exports (`index.ts`) for each module
+- File size: 200-400 lines typical, 800 max
+- Use Zod for runtime input validation (see `templates/rules/coding-style.md`)
 
 ## Dependencies
 

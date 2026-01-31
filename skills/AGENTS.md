@@ -151,7 +151,10 @@ Any configurable options.
 
 ### Testing Requirements
 
-Skills are verified via integration tests. See root AGENTS.md for npm commands.
+- Skills are verified via integration tests
+- Test skill invocation with `/oh-my-claudecode:skill-name`
+- Verify trigger keywords activate correct skill
+- For git-related skills, follow `templates/rules/git-workflow.md`
 
 ## Dependencies
 

@@ -179,7 +179,10 @@ writeState('autopilot-state', state);
 
 ### Testing Requirements
 
-Test specific hooks with `npm test -- --grep "hook-name"`. See root AGENTS.md for other commands.
+- Test specific hooks with `npm test -- --grep "hook-name"`
+- Test execution modes end-to-end with skill invocation
+- Verify state persistence in `.omc/state/`
+- For security hooks, follow `templates/rules/security.md` checklist
 
 ## Dependencies
 

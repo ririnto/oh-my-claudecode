@@ -1,9 +1,9 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-01-28 | Updated: 2026-01-28 -->
+<!-- Generated: 2026-01-28 | Updated: 2026-01-31 -->
 
 # agents (Prompt Templates)
 
-Markdown prompt templates for all 32 agents in oh-my-claudecode.
+Markdown prompt templates for all 32 agents in oh-my-claudecode (12 base + 4 specialized + 16 tiered variants).
 
 ## Purpose
 

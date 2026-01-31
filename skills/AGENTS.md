@@ -1,9 +1,9 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-01-28 | Updated: 2026-01-28 -->
+<!-- Generated: 2026-01-28 | Updated: 2026-01-31 -->
 
 # skills
 
-32 skill definitions for workflow automation and specialized behaviors.
+37 skill definitions for workflow automation and specialized behaviors.
 
 ## Purpose
 
@@ -53,6 +53,7 @@ Skills are reusable workflow templates that can be invoked via `/oh-my-claudecod
 ### Utility Skills
 | File | Skill | Purpose |
 |------|-------|---------|
+| `orchestrate.md` | orchestrate | Core multi-agent orchestration (always active) |
 | `learner.md` | learner | Extract reusable skill from session |
 | `note.md` | note | Save notes for compaction resilience |
 | `cancel.md` | cancel | Cancel any active OMC mode |
@@ -61,6 +62,8 @@ Skills are reusable workflow templates that can be invoked via `/oh-my-claudecod
 | `omc-setup.md` | omc-setup | One-time setup wizard |
 | `mcp-setup.md` | mcp-setup | Configure MCP servers |
 | `help.md` | help | Usage guide |
+| `learn-about-omc.md` | learn-about-omc | Usage pattern analysis |
+| `skill.md` | skill | Manage local skills |
 
 ### Domain Skills
 | File | Skill | Purpose |

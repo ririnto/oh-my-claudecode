@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-01-28 | Updated: 2026-01-28 -->
+<!-- Generated: 2026-01-28 | Updated: 2026-01-31 -->
 
 # src
 
@@ -8,9 +8,10 @@ TypeScript source code for oh-my-claudecode - the core library that powers multi
 ## Purpose
 
 This directory contains all TypeScript source code organized into modules:
+
 - **agents/** - 32 specialized AI agent definitions with tiered variants
-- **tools/** - LSP/AST/REPL tools for IDE-like capabilities
-- **hooks/** - 30+ event-driven behaviors for execution modes
+- **tools/** - 15 LSP/AST/REPL tools for IDE-like capabilities
+- **hooks/** - 31 event-driven behaviors for execution modes
 - **features/** - Core features (model routing, state management, verification)
 - **config/** - Configuration loading and validation
 - **commands/** - Command expansion utilities
@@ -28,8 +29,8 @@ This directory contains all TypeScript source code organized into modules:
 | Directory | Purpose |
 |-----------|---------|
 | `agents/` | 32 agent definitions with prompts and tools (see `agents/AGENTS.md`) |
-| `tools/` | LSP, AST, and Python REPL tools (see `tools/AGENTS.md`) |
-| `hooks/` | 30+ hooks for execution modes (see `hooks/AGENTS.md`) |
+| `tools/` | 15 LSP, AST, and Python REPL tools (see `tools/AGENTS.md`) |
+| `hooks/` | 31 hooks for execution modes (see `hooks/AGENTS.md`) |
 | `features/` | Core features like model routing, state (see `features/AGENTS.md`) |
 | `config/` | Configuration loading (`loader.ts`) |
 | `commands/` | Command expansion utilities |
@@ -58,11 +59,12 @@ This directory contains all TypeScript source code organized into modules:
    ```
 
 3. **Tool Registration**: Custom tools are registered in `tools/index.ts`:
+
    ```typescript
    export const allCustomTools = [
      ...lspTools,      // 12 LSP tools
      ...astTools,      // 2 AST tools
-     pythonReplTool    // 1 REPL tool
+     pythonReplTool    // 1 REPL tool (15 total)
    ];
    ```
 
@@ -72,7 +74,7 @@ This directory contains all TypeScript source code organized into modules:
      return {
        architect: architectAgent,
        executor: executorAgent,
-       // ... 30 more agents
+       // ... all 32 agents
      };
    }
    ```
